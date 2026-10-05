@@ -1,0 +1,17 @@
+{
+    "name": "exp04-amr-control-center",
+    "version": "1.0.0",
+    "description": "A basic Node.js and Express server for an AMR monitoring dashboard",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^5.2.1"
+    },
+    "devDependencies": {},
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs"
+}

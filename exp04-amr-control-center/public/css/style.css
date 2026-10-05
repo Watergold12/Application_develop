@@ -1,0 +1,731 @@
+/* =========================
+   Variables
+========================= */
+
+:root {
+
+    --background: #070b12;
+
+    --panel: #0f1622;
+
+    --panel-light: #151e2d;
+
+    --primary: #38bdf8;
+
+    --text: #f8fafc;
+
+    --muted: #94a3b8;
+
+    --border: #243044;
+
+    --green: #4ade80;
+
+    --red: #f87171;
+
+    --radius: 12px;
+
+}
+
+
+/* =========================
+   Base
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #12304a,
+            transparent 30%
+        ),
+        var(--background);
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+}
+
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+code {
+
+    color: var(--primary);
+
+}
+
+
+/* =========================
+   Dashboard
+========================= */
+
+.dashboard {
+
+    width: 92%;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 45px 0;
+
+}
+
+
+/* =========================
+   Header
+========================= */
+
+.header {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+    padding-bottom: 25px;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.eyebrow {
+
+    color: var(--primary);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.header h1 {
+
+    font-size: 2.5rem;
+
+    line-height: 1.2;
+
+}
+
+
+.subtitle {
+
+    color: var(--muted);
+
+}
+
+
+.server-status {
+
+    color: var(--green);
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+}
+
+
+.dot {
+
+    display: inline-block;
+
+    width: 8px;
+
+    height: 8px;
+
+    margin-right: 5px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    box-shadow:
+        0 0 10px var(--green);
+
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+.navigation {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin: 20px 0;
+
+}
+
+
+.navigation a {
+
+    padding: 8px 14px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 7px;
+
+    color: var(--muted);
+
+    font-size: 0.85rem;
+
+}
+
+
+.navigation a:hover,
+.navigation a.active {
+
+    color: var(--primary);
+
+    border-color:
+        var(--primary);
+
+}
+
+
+/* =========================
+   Grid
+========================= */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* =========================
+   Cards
+========================= */
+
+.card {
+
+    background: var(--panel);
+
+    border:
+        1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    padding: 25px;
+
+}
+
+
+.label {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 7px;
+
+}
+
+
+.state {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    padding: 3px 8px;
+
+    border-radius: 5px;
+
+    color: var(--green);
+
+    background:
+        rgba(74, 222, 128, 0.08);
+
+    font-size: 0.75rem;
+
+}
+
+
+/* =========================
+   Progress
+========================= */
+
+.progress {
+
+    width: 100%;
+
+    height: 7px;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: #1e293b;
+
+}
+
+
+.progress div {
+
+    width: 0%;
+
+    height: 100%;
+
+    background: var(--primary);
+
+    transition:
+        width 0.4s ease;
+
+}
+
+
+.progress.large {
+
+    height: 10px;
+
+}
+
+
+/* =========================
+   Mission
+========================= */
+
+.mission {
+
+    margin-top: 15px;
+
+}
+
+
+.section-heading {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    align-items: center;
+
+}
+
+
+.mission-status {
+
+    color: var(--green);
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+}
+
+
+.mission-details {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    margin-top: 15px;
+
+    color: var(--muted);
+
+    font-size: 0.85rem;
+
+}
+
+
+.mission-details strong {
+
+    color: var(--text);
+
+}
+
+
+/* =========================
+   Server Information
+========================= */
+
+.server-info {
+
+    margin-top: 15px;
+
+}
+
+
+.server-info p {
+
+    color: var(--muted);
+
+    margin-top: 10px;
+
+}
+
+
+pre {
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    overflow-x: auto;
+
+    border-radius: 8px;
+
+    background: #080c13;
+
+    color: var(--primary);
+
+    font-size: 0.8rem;
+
+}
+
+
+/* =========================
+   Robot Page
+========================= */
+
+.robot-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.robot-visual {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.robot-visual > p {
+
+    margin-top: 30px;
+
+    color: var(--muted);
+
+    font-size: 0.8rem;
+
+}
+
+
+.robot {
+
+    position: relative;
+
+    width: 220px;
+
+    height: 150px;
+
+}
+
+
+.robot-body {
+
+    position: absolute;
+
+    left: 45px;
+
+    top: 25px;
+
+    width: 130px;
+
+    height: 90px;
+
+    border:
+        2px solid var(--primary);
+
+    border-radius: 15px;
+
+    background: var(--panel-light);
+
+}
+
+
+.sensor {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    color: var(--primary);
+
+}
+
+
+.wheel {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    width: 35px;
+
+    height: 60px;
+
+    border-radius: 10px;
+
+    background: #334155;
+
+}
+
+
+.wheel.left {
+
+    left: 25px;
+
+}
+
+
+.wheel.right {
+
+    right: 25px;
+
+}
+
+
+.spec {
+
+    display: flex;
+
+    justify-content:
+        space-between;
+
+    padding: 12px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.spec span {
+
+    color: var(--muted);
+
+}
+
+
+.spec strong {
+
+    text-align: right;
+
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+
+    padding-top: 25px;
+
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 0.75rem;
+
+}
+
+
+/* =========================
+   Error Page
+========================= */
+
+.error-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+.error-page h1 {
+
+    font-size: 8rem;
+
+    color: var(--primary);
+
+    line-height: 1;
+
+}
+
+
+.error-page p {
+
+    color: var(--muted);
+
+}
+
+
+.back-button {
+
+    margin-top: 25px;
+
+    padding: 10px 18px;
+
+    border:
+        1px solid var(--primary);
+
+    border-radius: 7px;
+
+    color: var(--primary);
+
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 800px) {
+
+    .grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .robot-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard {
+
+        width: 94%;
+
+        padding: 25px 0;
+
+    }
+
+
+    .header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .navigation {
+
+        overflow-x: auto;
+
+    }
+
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .mission-details {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AMR Control Center</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css">
+
+</head>
+
+
+<body>
+
+    <main class="dashboard">
+
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <div>
+
+                <p class="eyebrow">
+                    ROBOTICS SYSTEM
+                </p>
+
+                <h1>
+                    AMR Control Center
+                </h1>
+
+                <p class="subtitle">
+                    Local monitoring interface
+                </p>
+
+            </div>
+
+
+            <div class="server-status">
+
+                <span class="dot"></span>
+
+                NODE SERVER ONLINE
+
+            </div>
+
+        </header>
+
+
+        <!-- Navigation -->
+
+        <nav class="navigation">
+
+            <a
+                href="/"
+                class="active">
+                Dashboard
+            </a>
+
+            <a href="/robot">
+                Robot
+            </a>
+
+            <a href="/api/status">
+                Status API
+            </a>
+
+            <a href="/api/mission">
+                Mission API
+            </a>
+
+        </nav>
+
+
+        <!-- Robot Overview -->
+
+        <section class="grid">
+
+
+            <article class="card">
+
+                <span class="label">
+                    ROBOT
+                </span>
+
+                <h2 id="robotName">
+                    Loading...
+                </h2>
+
+                <span
+                    id="robotState"
+                    class="state">
+                    ...
+                </span>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="label">
+                    BATTERY
+                </span>
+
+                <h2 id="battery">
+                    --%
+                </h2>
+
+                <div class="progress">
+
+                    <div
+                        id="batteryBar">
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="label">
+                    MODE
+                </span>
+
+                <h2 id="mode">
+                    ...
+                </h2>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="label">
+                    SPEED
+                </span>
+
+                <h2 id="speed">
+                    -- m/s
+                </h2>
+
+            </article>
+
+        </section>
+
+
+        <!-- Mission -->
+
+        <section class="mission card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="label">
+                        CURRENT MISSION
+                    </span>
+
+                    <h2 id="missionName">
+                        Loading...
+                    </h2>
+
+                </div>
+
+                <span
+                    id="missionStatus"
+                    class="mission-status">
+                    ...
+                </span>
+
+            </div>
+
+
+            <div class="progress large">
+
+                <div
+                    id="missionBar">
+                </div>
+
+            </div>
+
+
+            <div class="mission-details">
+
+                <span>
+                    Progress:
+                    <strong id="missionProgress">
+                        --%
+                    </strong>
+                </span>
+
+                <span>
+                    Target:
+                    <strong id="missionTarget">
+                        ...
+                    </strong>
+                </span>
+
+                <span>
+                    Obstacles:
+                    <strong id="obstacles">
+                        --
+                    </strong>
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Server Explanation -->
+
+        <section class="server-info card">
+
+            <span class="label">
+                SERVER INFORMATION
+            </span>
+
+            <h2>
+                This page is being served by Node.js
+            </h2>
+
+            <p>
+                The dashboard is a static HTML page,
+                while the robot information is requested
+                dynamically from the Express server.
+            </p>
+
+            <pre id="rawData">
+Waiting for server response...
+            </pre>
+
+        </section>
+
+
+        <footer>
+
+            Node.js + Express
+            ·
+            Experiment 04
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="/js/dashboard.js"></script>
+
+</body>
+
+</html>

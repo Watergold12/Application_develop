@@ -1,0 +1,237 @@
+# ============================================================
+# Application Development Lab - All Experiments
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Node.js / npm
+# ------------------------------------------------------------
+
+node_modules/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager caches
+.yarn/
+.pnp/
+.pnp.js
+
+
+# ------------------------------------------------------------
+# Environment / Secrets
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+# Local configuration
+*.local
+
+
+# ------------------------------------------------------------
+# Build / Production Output
+# ------------------------------------------------------------
+
+dist/
+build/
+out/
+
+# Vite
+.vite/
+
+
+# ------------------------------------------------------------
+# Coverage / Testing
+# ------------------------------------------------------------
+
+coverage/
+.nyc_output/
+*.lcov
+
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+
+logs/
+*.log
+
+
+# ------------------------------------------------------------
+# Temporary Files
+# ------------------------------------------------------------
+
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+
+# ------------------------------------------------------------
+# Operating System Files
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+.directory
+.Trash-*
+
+
+# ------------------------------------------------------------
+# IDE / Editors
+# ------------------------------------------------------------
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio
+.vs/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+
+# ------------------------------------------------------------
+# React / Vite
+# ------------------------------------------------------------
+
+# React build artifacts
+**/client/dist/
+**/frontend/dist/
+
+# Vite cache
+**/node_modules/.vite/
+
+
+# ------------------------------------------------------------
+# MongoDB
+# ------------------------------------------------------------
+
+# Local MongoDB database files
+data/
+db/
+mongodb-data/
+
+# MongoDB logs
+mongod.log
+mongod.lock
+
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python environment files
+*.egg-info/
+
+
+# ------------------------------------------------------------
+# Java
+# ------------------------------------------------------------
+
+*.class
+target/
+out/
+
+
+# ------------------------------------------------------------
+# Android
+# ------------------------------------------------------------
+
+.gradle/
+**/build/
+local.properties
+*.apk
+*.aab
+
+
+# ------------------------------------------------------------
+# Archives
+# ------------------------------------------------------------
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+
+# ------------------------------------------------------------
+# Generated / Exported Files
+# ------------------------------------------------------------
+
+# Don't accidentally commit generated documentation
+*.pdf
+
+# Don't commit generated Word documents
+*.docx
+
+# Don't commit generated images
+# Uncomment if your experiments generate lots of temporary images
+# *.png
+# *.jpg
+# *.jpeg
+
+
+# ------------------------------------------------------------
+# Local Database / Storage
+# ------------------------------------------------------------
+
+*.sqlite
+*.sqlite3
+*.db
+
+
+# ------------------------------------------------------------
+# Personal / Machine-specific files
+# ------------------------------------------------------------
+
+*.pid
+*.seed

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Robot | AMR Control Center</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css">
+
+</head>
+
+
+<body>
+
+    <main class="dashboard">
+
+
+        <header class="header">
+
+            <div>
+
+                <p class="eyebrow">
+                    ROBOT PROFILE
+                </p>
+
+                <h1>
+                    McRae AMR
+                </h1>
+
+                <p class="subtitle">
+                    Autonomous Mobile Robot
+                </p>
+
+            </div>
+
+
+            <div class="server-status">
+
+                <span class="dot"></span>
+
+                SYSTEM READY
+
+            </div>
+
+        </header>
+
+
+        <nav class="navigation">
+
+            <a href="/">
+                Dashboard
+            </a>
+
+            <a
+                href="/robot"
+                class="active">
+
+                Robot
+
+            </a>
+
+            <a href="/api/status">
+                Status API
+            </a>
+
+        </nav>
+
+
+        <section class="robot-layout">
+
+
+            <article class="card robot-visual">
+
+                <div class="robot">
+
+                    <div class="robot-body">
+
+                        <div class="sensor">
+                            ●
+                        </div>
+
+                    </div>
+
+                    <div class="wheel left"></div>
+
+                    <div class="wheel right"></div>
+
+                </div>
+
+                <p>
+                    Simulation / prototype unit
+                </p>
+
+            </article>
+
+
+            <article class="card">
+
+                <span class="label">
+                    SPECIFICATION
+                </span>
+
+                <div class="spec">
+
+                    <span>Platform</span>
+                    <strong>3-Wheel AMR</strong>
+
+                </div>
+
+                <div class="spec">
+
+                    <span>Controller</span>
+                    <strong>ESP32</strong>
+
+                </div>
+
+                <div class="spec">
+
+                    <span>Middleware</span>
+                    <strong>ROS 2</strong>
+
+                </div>
+
+                <div class="spec">
+
+                    <span>Simulation</span>
+                    <strong>Gazebo</strong>
+
+                </div>
+
+                <div class="spec">
+
+                    <span>Drive</span>
+                    <strong>Differential Drive</strong>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <section class="card">
+
+            <span class="label">
+                SERVER ROUTE
+            </span>
+
+            <h2>
+                GET /robot
+            </h2>
+
+            <p>
+                This page is returned by an Express
+                route using <code>res.sendFile()</code>.
+            </p>
+
+        </section>
+
+
+        <footer>
+
+            Node.js + Express
+            ·
+            Experiment 04
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
